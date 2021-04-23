@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,7 +40,7 @@ namespace EChartsCSharp
 
         public Options AddDataZoom(DataZoomOptions dataZoomOptions)
         {
-            this.DataZoom.Add(dataZoomOptions);
+            (this.DataZoom ??= new List<DataZoomOptions>()).Add(dataZoomOptions);
 
             return this;
         }

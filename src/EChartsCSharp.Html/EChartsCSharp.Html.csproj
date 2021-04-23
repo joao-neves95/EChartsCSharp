@@ -5,6 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Templates\htmlPageTemplate.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Templates\htmlPageTemplate.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.32" />
   </ItemGroup>
 

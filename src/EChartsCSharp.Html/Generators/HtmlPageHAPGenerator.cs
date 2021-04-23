@@ -29,7 +29,7 @@ namespace EChartsCSharp.Html.Generators
 
         private void LoadTemplate()
         {
-            this.HtmlDocument.LoadHtml(File.ReadAllText("../Templates/htmlPageTemplate.html"));
+            this.HtmlDocument.LoadHtml(File.ReadAllText("./Templates/htmlPageTemplate.html"));
         }
 
         public void AddHeadElem(IEnumerable<string> htmlHeadElems)

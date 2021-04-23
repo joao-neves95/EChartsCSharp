@@ -44,5 +44,23 @@ namespace EChartsCSharp
 
             return this;
         }
+
+        public AxisOptions xAxis { get; private set; } = new AxisOptions();
+
+        public Options SetXAxis(AxisOptions xAxisOptions)
+        {
+            this.xAxis = xAxisOptions;
+
+            return this;
+        }
+
+        public AxisOptions yAxis { get; private set; } = new AxisOptions();
+
+        public Options SetYAxis(AxisOptions yAxisOptions)
+        {
+            this.yAxis = yAxisOptions;
+
+            return this;
+        }
     }
 }

@@ -1,4 +1,4 @@
-
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -59,6 +59,22 @@ namespace EChartsCSharp
         public Options SetYAxis(AxisOptions yAxisOptions)
         {
             this.yAxis = yAxisOptions;
+
+            return this;
+        }
+
+        public List<SeriesOptions> Series { get; private set; }
+
+        public Options SetSeries(List<SeriesOptions> series)
+        {
+            this.Series = series;
+
+            return this;
+        }
+
+        public Options AddSeries(SeriesOptions series)
+        {
+            (this.Series ??= new List<SeriesOptions>()).Add(series);
 
             return this;
         }

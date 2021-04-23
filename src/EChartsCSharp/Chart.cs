@@ -8,6 +8,16 @@ namespace EChartsCSharp
         public Chart SetGlobalOptions(Options globalOptions)
         {
             this.GlobalOptions = globalOptions;
+
+            return this;
+        }
+
+        public HtmlOptions GlobalHtmlOptions { get; private set; } = new HtmlOptions();
+
+        public Chart SetGlobalHtmlOptions(HtmlOptions globalHtmlOptions)
+        {
+            this.GlobalHtmlOptions = globalHtmlOptions;
+
             return this;
         }
     }

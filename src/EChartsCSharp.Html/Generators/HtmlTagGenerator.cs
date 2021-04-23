@@ -12,7 +12,7 @@ namespace EChartsCSharp.Html.Generators
     /// Html string generator. It returns HTML string content, not HTML node objects.
     ///
     /// </summary>
-    public class HtmlTagGenerator : IHtmlTagGenerator
+    internal class HtmlTagGenerator : IHtmlTagGenerator
     {
         private string ParseTagProps(IEnumerable<KeyValuePair<string, string>> htmlTagProps)
         {

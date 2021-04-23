@@ -13,7 +13,7 @@ namespace EChartsCSharp.Html.Generators
     /// An IHtmlPageGenerator using HtmlAgilityPack.
     ///
     /// </summary>
-    public class HtmlPageHAPGenerator : IHtmlPageGenerator
+    internal class HtmlPageHAPGenerator : IHtmlPageGenerator
     {
         public HtmlPageHAPGenerator(IHtmlTagGenerator htmlTagGenerator)
         {
